@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.maxmax{
+  max-width: 80%;
+}
+.responsive{
+  width:30px;
+  min-width: 10px;
+  height: auto;
+  text-align: center;
+}
 .background{
   background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
   background-position: center;

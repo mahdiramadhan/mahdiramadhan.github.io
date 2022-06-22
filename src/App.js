@@ -1,43 +1,47 @@
 import './App.css';
 import React from 'react';
 import {github,grabcad,linkedin,researchgate,medium} from './components/assets/index';
+import EducationCard from './components/educationcard';
+// import OrganizationCard from './components/organization';
 function App() {
   return (
     <>
     <div className='background'> 
     <p style={{fontSize:'30px',color:'white', textAlign:'center', padding:'63px'}}>NO ONE CAN DEFEAT A CREATIVE MAN</p>
     </div>
-  <div className='container-fluid '>
-    <div className='row justify-content-md-center'>  
-      <p style={{fontWeight:'bold', textAlign:'center', fontSize:'24px', marginBottom:'1px'}}>Muhammad Mahdi Ramadhan</p>
+  <div className='container-fluid justify-content-md-center maxmax'>
+    <div className='row'>  
+      <p style={{fontWeight:'bold', textAlign:'center', fontSize:'24px', marginBottom:'1px',marginTop:'5px'}}>Muhammad Mahdi Ramadhan</p>
       <p style={{fontWeight:'bold',textAlign:'center', fontSize:'20px',marginTop:'1px'}}>Product Manager</p>
-      <div className='row justify-content-md-center'>
-        <div className='col-md-auto'>
+    </div>
+    <div className='row justify-content-md-center'>
+      <div className = 'col col-md-auto'>
           <a href="https://github.com/mahdiramadhan">
-            <img src={github} style={{height:'30px'}}/>
+            <img src={github} className='responsive '/>
           </a>
-        </div>
-        <div className='col-md-auto'>
-          <a href="https://grabcad.com/mahdi.ramadhan-2/models">
-          <img src={grabcad} style={{height:'30px'}}/>
-          </a>
-        </div>
-        <div className='col-md-auto'>
-          <a href="https://id.linkedin.com/in/muhammad-mahdi-ramadhan">
-          <img src={linkedin} style={{height:'30px'}}/>
-          </a>
-        </div>
-        <div className='col-md-auto'>
-          <a href="/">
-          <img src={researchgate} style={{height:'30px'}}/>
-          </a>        
-        </div>
-        <div className='col-md-auto'>
-          <a href="https://medium.com/@Mahdi_ramadhan">
-          <img src={medium} style={{height:'30px'}}/>
-          </a>
-        </div>
       </div>
+      <div className = 'col col-md-auto '>
+          <a href="https://grabcad.com/mahdi.ramadhan-2/models">
+            <img src={grabcad} className='responsive'/>
+          </a>
+          </div>
+      <div className = 'col col-md-auto'>
+          <a href="https://id.linkedin.com/in/muhammad-mahdi-ramadhan">
+            <img src={linkedin} className='responsive'/>
+          </a>
+          </div>
+          <div className = 'col col-md-auto'>
+          <a href="/">
+            <img src={researchgate} className='responsive'/>
+          </a>  
+          </div>      
+          <div className = 'col col-md-auto'>
+          <a href="https://medium.com/@Mahdi_ramadhan">
+            <img src={medium} className='responsive'/>
+          </a>
+          </div>
+      </div>
+      <br/>
       <p className='mb-0' style={{fontWeight:'bolder'}}>Profile</p>
       <hr style={{borderTop: '3px solid black'}}/>
       <p>I am a resourceful and experienced Product Manager. 
@@ -47,18 +51,14 @@ function App() {
           Seeking to leverage proven leadership and strategy skills to grow revenue at
           PT Digitalinstincts Teknologi and PT Bringin Inti Teknologi.
           </p>
-      <p className='mb-0' style={{fontWeight:'bolder'}}>Education</p>
-      <hr style={{borderTop: '3px solid black'}}/>
-      {/* <div className='col-md-3'>
-        <p>tereasdas</p>
-      </div>
-      <div className='col-md-9'>
-        <p>dasdasdasd</p>
-      </div> */}
+      <EducationCard/>
+      {/* <OrganizationCard/> */}
+  
 
     </div>
+  
+    
 
-  </div>
   </>
   );
 }
