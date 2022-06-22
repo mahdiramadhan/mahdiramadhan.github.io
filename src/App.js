@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import {github,grabcad,linkedin,researchgate,medium} from './components/assets/index';
 import EducationCard from './components/educationcard';
-// import OrganizationCard from './components/organization';
+import OrganizationCard from './components/organization';
 function App() {
   return (
     <>
@@ -52,7 +52,7 @@ function App() {
           PT Digitalinstincts Teknologi and PT Bringin Inti Teknologi.
           </p>
       <EducationCard/>
-      {/* <OrganizationCard/> */}
+      <OrganizationCard/>
   
 
     </div>
