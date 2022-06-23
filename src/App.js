@@ -3,7 +3,9 @@ import React from 'react';
 import {github,grabcad,linkedin,researchgate,medium} from './components/assets/index';
 import EducationCard from './components/educationcard';
 import OrganizationCard from './components/organization';
-import CourseCard from './components/course';
+import CourseCard from './components/course'
+// import PublicationCard from './components/publication';
+
 function App() {
   return (
     <>
@@ -55,8 +57,7 @@ function App() {
       <EducationCard/>
       <OrganizationCard/>
       <CourseCard/>
-  
-
+      {/* <PublicationCard/> */}
     </div>
   
     

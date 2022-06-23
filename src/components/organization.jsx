@@ -1,4 +1,5 @@
 import React from 'react';
+import {Accordion} from 'react-bootstrap';
 
 
 const OrganizationCard= () => {
@@ -37,13 +38,17 @@ const OrganizationCard= () => {
         )
     }
     return (
-        <div>
-            <p className='mb-0' style={{fontWeight:'bolder'}}>Organization</p>
-            <hr style={{borderTop: '3px solid black'}}/>   
-            <div >
-                {infoorganization.map(rendercard)}     
-            </div>
-         </div>
+     <>
+            <hr style={{borderTop: '3px solid black'}}/>  
+            <Accordion defaultActiveKey={['0']} alwaysOpen>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>Organization</Accordion.Header>
+                    <Accordion.Body>
+                        {infoorganization.map(rendercard)} 
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>  
+     </>
 
     )
 }
