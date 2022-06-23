@@ -7,7 +7,7 @@ const OrganizationCard= () => {
             tahun:"2017-2018",
             tim:"Autonomous Marine Vehicle Universitas Indonesia (AMV UI)",
             position:"Chief of Technical Officer",
-            keterangan:"first joined the team as a mechanical member, never stopped learning to study mechanical, electricity, and programming of robots until I was appointed as chief of the technical officer. Finally, I brought the team for the first time in our history to get 1st place in the international robotics competition"
+            keterangan:"First joined the team as a mechanical member, never stopped learning to study mechanical, electricity, and programming of robots until I was appointed as chief of the technical officer. Finally, I brought the team for the first time in our history to get 1st place in the international robotics competition."
 
         },
         {
