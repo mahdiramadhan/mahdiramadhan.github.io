@@ -17,7 +17,7 @@ const CourseCard= () => {
             coursename:"Digital Talent Scholarship",
             supported:"Ministry of Communications and Informatics",
             title:"Internet of Things Course",
-            keterangan:"Underwent a 3 month course to learn IoT, starting from communication protocols (TCP, UDP, RTSP, webRTC, HLS, HTTP, API, GRPC, MQTT), middle ware (red node), to interfacing on apps."
+            keterangan:"Underwent a 3 month course to learn IoT, starting from physical layer to application layer (7 Layer on OSI Model include MQTT, Midle ware (red node), etc.) ."
         },
         {
             tahun:"2020",

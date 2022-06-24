@@ -4,7 +4,7 @@ import {github,grabcad,linkedin,researchgate,medium} from './components/assets/i
 import EducationCard from './components/educationcard';
 import OrganizationCard from './components/organization';
 import CourseCard from './components/course'
-// import PublicationCard from './components/publication';
+import PublicationCard from './components/publication';
 
 function App() {
   return (
@@ -57,7 +57,11 @@ function App() {
       <EducationCard/>
       <OrganizationCard/>
       <CourseCard/>
-      {/* <PublicationCard/> */}
+      <PublicationCard/>
+      {/* <WorkExperienced/>
+      <Achievement />
+      <BookRecommendation/>
+      <MyArticle/> */}
     </div>
   
     
