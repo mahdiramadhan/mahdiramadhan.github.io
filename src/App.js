@@ -7,7 +7,7 @@ import CourseCard from './components/course'
 import PublicationCard from './components/publication';
 import WorkExperienceCard from './components/workexperience';
 import AchievementCard from './components/achievement';
-// import BookrecommendationCard from './components/bookrecommendation';
+import BookrecommendationCard from './components/bookrecommendation';
 function App() {
   return (
     <>
@@ -62,7 +62,7 @@ function App() {
       <CourseCard/>
       <PublicationCard/>
       <AchievementCard />
-      {/* <BookrecommendationCard/> */}
+      <BookrecommendationCard/>
       {/* 
       
      
