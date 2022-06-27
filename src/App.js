@@ -5,7 +5,9 @@ import EducationCard from './components/educationcard';
 import OrganizationCard from './components/organization';
 import CourseCard from './components/course'
 import PublicationCard from './components/publication';
-
+import WorkExperienceCard from './components/workexperience';
+import AchievementCard from './components/achievement';
+// import BookrecommendationCard from './components/bookrecommendation';
 function App() {
   return (
     <>
@@ -54,13 +56,16 @@ function App() {
           Seeking to leverage proven leadership and strategy skills to grow revenue at
           PT Digitalinstincts Teknologi and PT Bringin Inti Teknologi.
           </p>
+      <WorkExperienceCard/>
       <EducationCard/>
       <OrganizationCard/>
       <CourseCard/>
       <PublicationCard/>
-      {/* <WorkExperienced/>
-      <Achievement />
-      <BookRecommendation/>
+      <AchievementCard />
+      {/* <BookrecommendationCard/> */}
+      {/* 
+      
+     
       <MyArticle/> */}
     </div>
   
