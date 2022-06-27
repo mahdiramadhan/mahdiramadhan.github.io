@@ -74,7 +74,7 @@ const BookrecommendationCard= () => {
             <div className="carousel-item active w-100" key={index} data-interval="10000">
                 <div className='row justify-content-center'>
                     <div className= 'col-4 col-md-2 ml-5 ' >
-                        <img   src={card.image} style={{height:'250px'}}/>
+                        <img   src={card.image} className='w-100'/>
                     </div>
                     <div className="col-4 col-md-4 ">
                         <h5>{card.judul}</h5>
