@@ -71,17 +71,11 @@ const BookrecommendationCard= () => {
     const rendercard=(card, index)=>{
         return(
 
-            <div className="carousel-item active w-100" key={index} data-interval="10000">
-                <div className='row justify-content-center'>
-                    <div className= 'col-4 col-md-2 ml-5 ' >
-                        <img   src={card.image} className='w-100'/>
-                    </div>
-                    <div className="col-4 col-md-4 ">
-                        <h5>{card.judul}</h5>
-                        <p>{card.keterangan}</p>
-                    </div>
+    
+                <div key={index} className='col-2 m-auto mb-4'>
+                        <img   src={card.image}  style={{height:'200px'}}/>
                 </div>
-            </div>
+  
         )
     }
     return (
@@ -92,19 +86,9 @@ const BookrecommendationCard= () => {
                     <Accordion.Header>Book Recommendation</Accordion.Header>
                     <Accordion.Body>
                     <p>Being a product manager keeps me driven by data and books, this will help me in every decision I make on Product development life cycle (pre-during-post). Here are the books:</p>    
-                    <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div className="carousel-inner" >
-                            {infoBookrecommendation.map(rendercard)} 
-                        </div>    
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <div className='row justify-content-center'>
+                        {infoBookrecommendation.map(rendercard)}    
+                    </div>             
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
