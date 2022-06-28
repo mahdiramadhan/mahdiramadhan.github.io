@@ -72,7 +72,7 @@ const BookrecommendationCard= () => {
         return(
 
     
-                <div key={index} className='col-2 m-auto mb-4'>
+                <div key={index} className='col m-auto mb-4'>
                         <img   src={card.image}  style={{height:'200px'}}/>
                 </div>
   
